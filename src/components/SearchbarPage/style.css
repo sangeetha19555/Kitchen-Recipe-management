@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+.jumbotron {
+  /* background-image: url("https://www.maggi.co.uk/sites/default/files/styles/maggi_desktop_image_style/public/NUK1265%20maggi%20Recipes%20banner%201500x700px%20opt2A.jpg?h=4f5b30f1&itok=DcsF1RwA"); */
+  background-image: linear-gradient(
+      rgba(80, 79, 79, 0.495),
+      rgba(0, 0, 0, 0.548)
+    ),
+    url("https://www.maggi.co.uk/sites/default/files/styles/maggi_desktop_image_style/public/NUK1265%20maggi%20Recipes%20banner%201500x700px%20opt2A.jpg?h=4f5b30f1&itok=DcsF1RwA");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 80px;
+}
+.jumbotron h1,
+h2 {
+  color: #fff;
+  /* color: rgb(255, 0, 136); */
+}
+.button-input {
+  width: 60%;
+  margin-top: 40px;
+}
