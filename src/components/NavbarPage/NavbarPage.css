@@ -1,54 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 .navbar_background {
-  background-color: rgba(237, 242, 241, 0.911);
+  background-color: rgba(11, 11, 11, 0.926);
 }
 .navbar_top_icon {
+  margin-left: 10px;
   margin-top: -5px;
   margin-right: 4px;
 }
-.nav_bar {
-  list-style: none;
+.margin-top30 {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.header-text {
+  display: block;
+  color: rgb(241, 245, 243) !important;
   display: flex;
-  padding-top: 16px;
-  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
-  color: red;
-  /* margin-right: 20px; */
-}
-
-/* .nav_bar li {
-} */
-.nav_bar a {
   margin-right: 30px;
-  text-decoration: none;
-  color: rgb(16, 16, 15);
-  font-weight: 700;
-  transition: 0.5s;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
-.nav_bar a:hover {
-  color: rgb(255, 3, 3);
+.header-text:hover {
+  color: rgba(251, 249, 249, 0.773) !important;
+}
+.header-text:focus {
+  color: rgba(253, 253, 255, 0.773) !important;
+  background-color: rgba(2, 177, 81, 0.828);
+  border-radius: 10px;
+  padding: 10px 10px;
 }
 
-/* .active {
-  text-decoration: underline;
-  color: rgb(255, 3, 3);
-  background-color: rgb(66, 128, 0);
-  padding: 10px;
-  border-radius: 5px;
-} */
 @media only screen and (max-width: 976px) {
-  .nav_bar a {
-    display: block;
-    margin-right: 30px;
-    text-decoration: none;
-    color: rgb(241, 241, 14);
-    font-weight: 700;
-    transition: 0.5s;
+  .navbar-collapse {
+    margin-top: 20px;
   }
-  .nav_bar {
-    flex-direction: column;
-    padding-left: 0;
+  .margin-top30 {
+    margin-top: 0px;
+    margin-left: 0px;
   }
-  .nav_bar li {
-    padding-bottom: 13px;
+  .header-text {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    padding: 20px 20px 5px 0px;
   }
 }

@@ -10,6 +10,7 @@ import { useContext, useEffect } from "react";
 import axios from "./Axios";
 // import "./App.css";
 import { Favorites } from "./components/Favorites/Favorites";
+// import { SampleLogin } from "./components/SampleLogin";
 
 function App() {
   const { user, setUser } = useContext(MyContext);
@@ -24,6 +25,9 @@ function App() {
         <Route path="/" exact>
           <HomePage />
         </Route>
+        <Route path="/home" exact>
+          <HomePage />
+        </Route>
         <Route path="/homescreen" exact>
           <HomeScreen />
         </Route>
@@ -32,6 +36,7 @@ function App() {
           <>
             <Route path="/login">
               <LoginPage />
+              {/* <SampleLogin /> */}
             </Route>
 
             <Route path="/signup">

@@ -4,7 +4,7 @@ import { MealCard } from "../MealCard/MealCard";
 import "./MealsContainer.css";
 
 export const MealsContainer = ({ meals }) => {
-  console.log("MealsContainer77777", meals);
+  // console.log("MealsContainer77777", meals);
 
   return (
     <div className="meals_container">
@@ -16,9 +16,9 @@ export const MealsContainer = ({ meals }) => {
       ))} */}
 
       {meals &&
-        meals.map((meal) => (
+        meals.map((meal, idx) => (
           // <div key={meal.idMeal}>{meal.strMeal}</div>
-          <MealCard key={meal.idMeal} {...meal} />
+          <MealCard key={meal.idMeal} {...meal} idx={idx} />
         ))}
     </div>
   );

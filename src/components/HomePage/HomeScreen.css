@@ -4,3 +4,101 @@
   font-size: 80px;
   font-weight: 600;
 }
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Mitr:wght@200;400&family=Poppins:wght@300;400&display=swap");
+/* font-family: 'Creepster', cursive;
+font-family: 'Mitr', sans-serif;
+font-family: 'Poppins', sans-serif; */
+.HomePage {
+  background-image: linear-gradient(
+      rgba(242, 6, 6, 0.013),
+      rgba(13, 234, 68, 0.168),
+      rgba(234, 135, 13, 0.207)
+    ),
+    url("/public/images/background_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.HomePage_title {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 80px;
+}
+
+.HomePage_title1 {
+  background-color: rgba(9, 126, 87, 0.733);
+  color: rgb(245, 234, 234);
+  font-size: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Creepster", cursive;
+}
+.HomePage_title2 {
+  background-color: rgba(9, 126, 87, 0.819);
+  color: rgb(245, 234, 234);
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Creepster", cursive;
+}
+.HomePage_title3 {
+  background-color: rgba(9, 126, 87, 0.819);
+  color: rgb(230, 225, 225);
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Creepster", cursive;
+}
+.Homepage_search_button {
+  background-color: rgba(170, 10, 10, 0.559);
+  border: 3px solid rgba(255, 0, 72, 0.833);
+  padding: 8px 30px;
+  border-radius: 10px 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+  font-family: "Mitr", sans-serif;
+}
+.Homepage_search_button:hover {
+  background-color: rgba(59, 57, 57, 0.688);
+  border: 3px solid rgba(255, 0, 72, 0.654);
+  border-radius: 50px 10px;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 0.4s;
+}
+
+@media only screen and (max-width: 976px) {
+  .Homepage_search_button {
+    padding: 7px 20px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .HomePage_title1 {
+    font-size: 50px;
+  }
+  .HomePage_title2 {
+    font-size: 40px;
+  }
+  .HomePage_title3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .HomePage_title1 {
+    font-size: 30px;
+  }
+  .HomePage_title2 {
+    font-size: 20px;
+  }
+  .HomePage_title3 {
+    font-size: 19px;
+  }
+}

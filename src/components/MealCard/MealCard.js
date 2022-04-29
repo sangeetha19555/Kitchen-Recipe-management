@@ -7,19 +7,20 @@ export const MealCard = ({
   strMeal,
   strInstructions,
   idMeal,
+  idx,
 }) => {
   return (
     // <p>hello</p>
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src={strMealThumb} />
       <Card.Body>
-        <Card.Title>{strMeal}</Card.Title>
+        <Card.Title className="card_title">{strMeal}</Card.Title>
         {/* see More button */}
         <MealModal
           title={strMeal}
           description={strInstructions}
           idMeal={idMeal}
-          key={idMeal}
+          key={idx}
         />
         {/* see More button ends*/}
       </Card.Body>

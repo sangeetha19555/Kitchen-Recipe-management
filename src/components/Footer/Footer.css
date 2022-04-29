@@ -1,0 +1,118 @@
+section {
+  padding: 100px;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.title {
+  text-align: center;
+}
+.title_cap_letter {
+}
+.titleText {
+  font-size: 40px;
+  font-weight: 300;
+  color: #111;
+}
+
+.titleText span {
+  position: relative;
+  color: rgba(229, 10, 10, 0.959);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.contact {
+  background: url("/public/images/bg3.jpg");
+  background-size: cover;
+}
+
+.contact .contactForm {
+  padding: 75px 50px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 60px;
+}
+
+.contact .contactForm h3 {
+  color: #111;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contact .contactForm .inputBx {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact .contactForm .inputBx input,
+.contact .contactForm .inputBx textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contact .contactForm .inputBx input[type="submit"] {
+  font-size: 1em;
+  color: #fff;
+  /* background-color: #ff0157; */
+  background-color: rgba(216, 9, 9, 0.959);
+  border: 3px solid rgba(255, 0, 72, 0.833);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 120px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact .contactForm .inputBx input[type="submit"]:hover {
+  letter-spacing: 2px;
+  color: black;
+}
+
+.copyrightText {
+  padding: 10px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.copyrightText a {
+  color: rgba(216, 9, 9, 0.959);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 20px;
+    bottom: 0;
+  }
+
+  .titleText {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .contact .contactForm {
+    padding: 35px 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .copyrightText {
+    padding: 10px 10px;
+  }
+}

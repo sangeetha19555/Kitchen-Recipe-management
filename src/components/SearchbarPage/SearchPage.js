@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
-import { FormControl, InputGroup, Button } from "react-bootstrap";
+import { FormControl, InputGroup } from "react-bootstrap";
+// import { NavLink } from "react-router-dom";
 import { MyContext } from "../../Context/Context";
 import "./style.css";
 
@@ -15,24 +16,32 @@ export const SearchPage = () => {
   }
 
   return (
-    <div className="jumbotron">
-      <h1 className="title">Welcome</h1>
-      <h2>You can sreach your favorite meals</h2>
+    <div>
+      {/* <h1 className="jumbotron_title1">Are You Hungry ?</h1>
+      <h2 className="jumbotron_title2 ">Don't wait!</h2>
+      <h2 className="jumbotron_title3 ">Let start to cook your Food Now</h2> */}
+      <div className="title" id="search">
+        <h2 className="titleText">
+          <span>S</span>earch Recpies
+        </h2>
+      </div>
 
-      <div className="button-input">
-        <InputGroup className="mb-3 ">
-          <FormControl
-            placeholder="Search for a meal"
-            aria-label="Meal Search Input"
-            aria-describedby="meal-search-button"
-            value={searchInput}
-            onChange={(e) => setsearchInput(e.target.value)}
-          />
+      <div className="jumbotron">
+        <div className="button-input">
+          <InputGroup className="mb-3 ">
+            <FormControl
+              placeholder="Search for a meal"
+              aria-label="Meal Search Input"
+              aria-describedby="meal-search-button"
+              value={searchInput}
+              onChange={(e) => setsearchInput(e.target.value)}
+            />
 
-          <Button variant="danger" onClick={handleSearch}>
-            Search
-          </Button>
-        </InputGroup>
+            <button onClick={handleSearch} className="search_button">
+              Search
+            </button>
+          </InputGroup>
+        </div>
       </div>
     </div>
   );

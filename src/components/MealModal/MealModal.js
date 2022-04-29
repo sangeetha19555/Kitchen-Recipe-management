@@ -46,13 +46,13 @@ const MealModal = ({ title, description, idMeal }) => {
   };
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <button variant="primary" onClick={handleShow} className="card_button">
         See More
-      </Button>
+      </button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+          <Modal.Title className="card_title">{title}</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>

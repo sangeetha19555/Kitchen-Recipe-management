@@ -30,7 +30,11 @@ export const Favorites = () => {
 
   return (
     <div>
-      <h3>Your favorites</h3>
+      <div className="title">
+        <h2 className="titleText mt-5">
+          <span>Y</span>our Favorites Recipes
+        </h2>
+      </div>
       <div className="meals_container">
         {favorites.map(({ meals: meal }) => (
           <MealCard key={meal[0].idMeal} {...meal[0]} />

@@ -1,6 +1,6 @@
 import axios from "../../Axios";
 import React, { useContext, useState } from "react";
-import { Button, Form } from "react-bootstrap";
+// import { Button, Form } from "react-bootstrap";
 import { MyContext } from "../../Context/Context";
 import { useHistory } from "react-router-dom";
 
@@ -25,38 +25,70 @@ export const SingupPage = () => {
   };
 
   return (
-    <Form onSubmit={handleSignup}>
-      <h3>Signup</h3>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter email"
-          value={email}
-          required
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
+    <div>
+      <div className="login_melon_img Sign_slider-01">
+        <img src="/images/signup-img-1.png" alt="signup_img1" />
+      </div>
+      <div className="login_melon_img Sign_slider-04">
+        <img src="/images/signup-img-4.png" alt="signup_img4" />
+      </div>
+      <div className="login_melon_img Sign_slider-03">
+        <img src="/images/signup_img-3.png" alt="sign_image3" />
+      </div>
+      <div className="title">
+        <h2 className="titleText mt-3">
+          <span>S</span>ign Up
+        </h2>
+      </div>
+      <div className="LoginBox">
+        <div className="Logincontainer">
+          {/* image container */}
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Password"
-          value={password}
-          required
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+          <div className="contactInfo signUpContainer_img"></div>
+
+          {/* form container */}
+          <div className="contactForm">
+            <h2>Sign Up Now</h2>
+
+            <form onSubmit={handleSignup}>
+              <div className="formBox">
+                <div className="inputBox w100">
+                  <input
+                    type="text"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <span>Enter Email</span>
+                </div>
+
+                <div className="inputBox w100">
+                  <input
+                    type="text"
+                    required
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                  />
+                  <span>Enter password</span>
+                </div>
+
+                <div className="inputBox w100">
+                  {/* <input type="submit" /> */}
+                  <button className="signup_button" type="submit">
+                    Sign Up
+                  </button>
+                </div>
+                <div className="login_melon_img Sign_slider-02 ">
+                  <img
+                    src="https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/deal.png"
+                    alt="signup_img2"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
