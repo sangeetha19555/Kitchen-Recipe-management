@@ -64,7 +64,7 @@
   z-index: 10000;
   transform: rotate(20deg);
   margin-top: 50px;
-  animation: animate_right 10s linear infinite;
+  /* animation: animate_right 10s linear infinite; */
 }
 .Sign_slider-02 {
   transform: rotate(333deg);
@@ -84,7 +84,7 @@
   width: 130px;
 }
 .Sign_slider-03 img {
-  width: 150px;
+  width: 100px;
 }
 .Sign_slider-04 {
   top: 30px;
@@ -112,24 +112,7 @@
     transform: translateY(80px);
   }
 }
-/* .bounce-animate {
-  animation-name: float-bob;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  -moz-animation-name: float-bob;
-  -moz-animation-duration: 2s;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: float-bob;
-  -ms-animation-duration: 2s;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-  -o-animation-name: float-bob;
-  -o-animation-duration: 2s;
-  -o-animation-iteration-count: infinite;
-  -o-animation-timing-function: linear;
-} */
+
 .Logincontainer .contactInfo {
   position: absolute;
   top: 50px;
@@ -363,11 +346,37 @@
   .slider-03 img {
     width: 100px;
   }
+  .Sign_slider-01 {
+    animation: inherit;
+  }
+  .Sign_slider-04 {
+    z-index: -2;
+  }
+  .Sign_slider-02 {
+    right: -2px;
+    bottom: -13px;
+  }
+  .Sign_slider-03 {
+    left: 54px;
+    bottom: -28px;
+    transform: rotate(20deg);
+    z-index: 10000;
+  }
+
+  .Sign_slider-04 img,
+  .Sign_slider-02 img,
+  .Sign_slider-01 img {
+    width: 50px;
+  }
+  .Sign_slider-03 img {
+    width: 0px;
+  }
   .slider-03 {
     top: 50px;
     right: 50px;
     transform: rotate(330deg);
     margin-top: 50px;
+    z-index: -2;
   }
 }
 @media (max-width: 600px) {
