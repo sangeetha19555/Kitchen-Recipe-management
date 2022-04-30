@@ -22,7 +22,7 @@ export const SearchPage = () => {
       <h2 className="jumbotron_title3 ">Let start to cook your Food Now</h2> */}
       <div className="title" id="search">
         <h2 className="titleText">
-          <span>S</span>earch Recpies
+          <span>S</span>earch Recipe
         </h2>
       </div>
 
