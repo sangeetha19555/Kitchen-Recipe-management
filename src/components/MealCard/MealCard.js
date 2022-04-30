@@ -11,7 +11,7 @@ export const MealCard = ({
 }) => {
   return (
     // <p>hello</p>
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem", marginBottom: "20px" }}>
       <Card.Img variant="top" src={strMealThumb} />
       <Card.Body>
         <Card.Title className="card_title">{strMeal}</Card.Title>

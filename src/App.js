@@ -8,7 +8,7 @@ import { SingupPage } from "./components/SingupPage/SingupPage";
 import { HomeScreen } from "./components/HomePage/HomeScreen";
 import { useContext, useEffect } from "react";
 import axios from "./Axios";
-// import "./App.css";
+import "./App.css";
 import { Favorites } from "./components/Favorites/Favorites";
 // import { SampleLogin } from "./components/SampleLogin";
 

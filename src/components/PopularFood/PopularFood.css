@@ -1,0 +1,41 @@
+/* .popular-food-background {
+  background-image: url("https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg6.jpg");
+  background-position: center;
+  background-size: cover;
+} */
+.popular_food_conatiner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* margin-bottom: 100px;
+  margin-top: 20px; */
+}
+
+.popular_food_conatiner .popular_food_conatiner--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 190px;
+  height: 190px;
+  background-color: rgb(253, 252, 252);
+  margin: 0 10px;
+  border-radius: 50%;
+  box-shadow: -8px -8px 15px rgb(91 88 88),
+    inset 3px 3px 5px rgb(84 83 83 / 64%), inset 3px 3px 5px rgb(56 54 54 / 10%),
+    inset -1px -1px 5px rgb(38 37 37);
+  overflow: hidden;
+  border: 10px solid rgba(231, 235, 231, 0.397);
+  margin-bottom: 20px;
+}
+.popular_food_conatiner .popular_food_conatiner--box img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.popular_food_conatiner .popular_food_conatiner--box img:hover {
+  transform: scale(1.2);
+}

@@ -5,6 +5,7 @@ import { MyContext } from "../../Context/Context";
 // import { Button } from "react-bootstrap";
 import "./HomeScreen.css";
 import { Footer } from "../Footer/Footer";
+import { PopularFood } from "../PopularFood/PopularFood";
 export const HomePage = () => {
   const { meals, setMeals } = useContext(MyContext);
 
@@ -32,9 +33,12 @@ export const HomePage = () => {
         </a>
       </div>
 
+      <PopularFood />
+
       <SearchPage />
 
       <MealsContainer meals={meals} />
+
       <Footer />
       {/* {meals &&
         meals.map((meal) => (
