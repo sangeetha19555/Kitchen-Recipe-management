@@ -67,3 +67,9 @@
   background-color: rgba(37, 192, 133, 0.688);
   color: rgb(9, 1, 1);
 }
+
+@media (max-width: 991px) {
+  .button-input {
+    width: 90%;
+  }
+}

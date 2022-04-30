@@ -348,6 +348,7 @@
   }
   .Sign_slider-01 {
     animation: inherit;
+    z-index: -2;
   }
   .Sign_slider-04 {
     z-index: -2;

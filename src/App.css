@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+/* body {
+  background-color: #fff;
+  min-height: 100vh;
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -38,4 +41,32 @@
 }
 .card {
   margin-top: 20px;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgb(217 217 5 / 81%) !important;
+  color: rgb(126 8 8) !important;
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: #817e7e;
+}
+
+/* loader starts*/
+.loader-container {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-container img {
+  width: 400px;
+}
+/* loader ends */
+
+@media (max-width: 976px) {
+  .loader-container img {
+    width: 300px;
+  }
 }
